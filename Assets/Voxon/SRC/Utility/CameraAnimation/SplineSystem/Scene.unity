@@ -1,0 +1,2601 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientEquatorColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 1
+    m_BakeResolution: 50
+    m_AtlasSize: 1024
+    m_AO: 1
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 0
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 0
+--- !u!196 &5
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666666
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &321500123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321500125}
+  - component: {fileID: 321500124}
+  m_Layer: 0
+  m_Name: Spline Loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &321500124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321500123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b154883273c2845f39445c8015d81639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: -1.9130914, y: 1.6014183, z: 0}
+  - {x: -3.7891233, y: 1.6014183, z: -0}
+  - {x: 0.5649221, y: 1.6659584, z: 1.7221425}
+  - {x: 1.444495, y: 0, z: 1.955483}
+  - {x: 2.3240678, y: -1.6659584, z: 2.1888235}
+  - {x: 3.9590755, y: 0, z: 0.20355654}
+  - {x: 4.262518, y: 2.0019712, z: -0.08881843}
+  - {x: 6.837236, y: 3.2437994, z: 0.23575792}
+  - {x: 4.8512726, y: 0.47749573, z: -1.8713498}
+  - {x: 1.62801, y: 0.1776123, z: -2.5217142}
+  - {x: 0.18963408, y: 0.04378979, z: -2.8119383}
+  - {x: -1.4003683, y: 0.3476522, z: -1.8752325}
+  - {x: -1.9130914, y: 1.6014183, z: 0}
+  - {x: -2.134734, y: 2.143402, z: 0.81063443}
+  - {x: 0.08690858, y: 1.6014183, z: 0}
+  - {x: -1.9130914, y: 1.6014183, z: 0}
+  modes: 010000000200000000000000010000000100000001000000
+  loop: 1
+--- !u!4 &321500125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321500123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33486128, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396901355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8444672262183301159, guid: c14535a3218783d4e9f971d13902cabe,
+    type: 3}
+  m_PrefabInstance: {fileID: 547888656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547888657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d444cf2d181564ea9417a65c37ede5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &516411526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516411528}
+  - component: {fileID: 516411527}
+  m_Layer: 0
+  m_Name: Spline No Loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &516411527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516411526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b154883273c2845f39445c8015d81639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: -1.3229973, y: 0.80390596, z: -3.1229782}
+  - {x: -3.596453, y: 0.80390596, z: -1.4082036}
+  - {x: -0.29688585, y: 3.0528035, z: 0}
+  - {x: 2.3562577, y: 2.9607062, z: 0}
+  - {x: 5.0094013, y: 2.868609, z: 0}
+  - {x: 4.3231173, y: 0.9434817, z: -1.6139164}
+  - {x: 2.2360847, y: -0.36078978, z: -1.3181944}
+  modes: 000000000200000000000000
+  loop: 0
+--- !u!4 &516411528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516411526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2246668, y: 0, z: 0.99288535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &547888656
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 428155847203071888, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_Name
+      value: _camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071888, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071889, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: CameraAnimator
+      value: 
+      objectReference: {fileID: 396901355}
+    - target: {fileID: 428155847203071889, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: baseScale
+      value: 10.0999975
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071889, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.0999975
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.0999975
+      objectReference: {fileID: 0}
+    - target: {fileID: 428155847203071892, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.0999975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444672262183301159, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: record_on_load
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444672262183301159, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: playback_frames
+      value: 
+      objectReference: {fileID: 1188304931}
+    - target: {fileID: 8444672262183301159, guid: c14535a3218783d4e9f971d13902cabe,
+        type: 3}
+      propertyPath: enable_playback
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c14535a3218783d4e9f971d13902cabe, type: 3}
+--- !u!1 &547888657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 428155847203071888, guid: c14535a3218783d4e9f971d13902cabe,
+    type: 3}
+  m_PrefabInstance: {fileID: 547888656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &547888658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547888657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c70418ce23ff5b4a91ef3c00dabc6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement_speed: 0.099999994
+  zoom_speed: 0.099999994
+--- !u!1 &615250596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615250598}
+  - component: {fileID: 615250597}
+  m_Layer: 0
+  m_Name: Line
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &615250597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615250596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3886e96ecea4f4f0eb98bb0c41a31fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p0: {x: 1.3529589, y: 1.0883769, z: -0.14489079}
+  p1: {x: 3.071498, y: 1.439543, z: -0.16768198}
+--- !u!4 &615250598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615250596}
+  m_LocalRotation: {x: -0.12830918, y: -0.20330164, z: -0.08974835, w: 0.9665146}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &695296352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695296353}
+  - component: {fileID: 695296356}
+  - component: {fileID: 695296355}
+  - component: {fileID: 695296354}
+  m_Layer: 0
+  m_Name: Left Eye
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &695296353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695296352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 0.25, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 1020182020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &695296354
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695296352}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &695296355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695296352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &695296356
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695296352}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1020182015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020182020}
+  - component: {fileID: 1020182019}
+  - component: {fileID: 1020182018}
+  - component: {fileID: 1020182017}
+  - component: {fileID: 1020182016}
+  m_Layer: 0
+  m_Name: Walker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1020182016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020182015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541a76f9c03874323b5154b14ac00427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 321500124}
+  duration: 5
+  lookForward: 1
+  mode: 1
+--- !u!23 &1020182017
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020182015}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1020182018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020182015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1020182019
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020182015}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1020182020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020182015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 695296353}
+  - {fileID: 1641084889}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188304931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647722cf43d1d7244baeb7e296d020b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instants:
+  - _Frame: 0
+    _Position: {x: 0, y: 0.23999998, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 17
+    _Position: {x: 0, y: 0.23714283, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 18
+    _Position: {x: 0, y: 0.21999997, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 19
+    _Position: {x: 0, y: 0.20857139, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 20
+    _Position: {x: 0, y: 0.18857138, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 21
+    _Position: {x: 0, y: 0.15999995, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 22
+    _Position: {x: 0, y: 0.117142804, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 23
+    _Position: {x: 0, y: 0.074285656, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 24
+    _Position: {x: 0, y: 0.0057142316, z: 0}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 25
+    _Position: {x: 0.0057142847, y: -0.08857148, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 26
+    _Position: {x: 0.017142855, y: -0.21428576, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 27
+    _Position: {x: 0.022857139, y: -0.3285715, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 28
+    _Position: {x: 0.022857139, y: -0.47714293, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 29
+    _Position: {x: 0.022857139, y: -0.5742858, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 30
+    _Position: {x: 0.022857139, y: -0.66857153, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 31
+    _Position: {x: 0.022857139, y: -0.7914287, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 32
+    _Position: {x: 0.022857139, y: -0.9114287, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 33
+    _Position: {x: 0.022857139, y: -1.0342859, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 34
+    _Position: {x: 0.022857139, y: -1.1571431, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 35
+    _Position: {x: 0.022857139, y: -1.2685717, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 36
+    _Position: {x: 0.022857139, y: -1.3400004, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 37
+    _Position: {x: 0.022857139, y: -1.4142861, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 38
+    _Position: {x: 0.022857139, y: -1.4942862, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 39
+    _Position: {x: 0.022857139, y: -1.5400006, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 40
+    _Position: {x: 0.022857139, y: -1.5428578, z: 0.008571427}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 41
+    _Position: {x: 0.022857139, y: -1.5428578, z: -0.008571429}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 42
+    _Position: {x: 0.022857139, y: -1.5428578, z: -0.025714286}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 43
+    _Position: {x: 0.022857139, y: -1.5114293, z: -0.028571429}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 44
+    _Position: {x: 0.022857139, y: -1.442858, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 45
+    _Position: {x: 0.022857139, y: -1.3285724, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 46
+    _Position: {x: 0.022857139, y: -1.1885724, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 47
+    _Position: {x: 0.022857139, y: -1.0428582, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 48
+    _Position: {x: 0.022857139, y: -0.8942869, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 49
+    _Position: {x: 0.022857139, y: -0.7400012, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 50
+    _Position: {x: 0.022857139, y: -0.5885727, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 51
+    _Position: {x: 0.022857139, y: -0.43142986, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 52
+    _Position: {x: 0.022857139, y: -0.25428703, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 53
+    _Position: {x: 0.022857139, y: -0.08857276, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 54
+    _Position: {x: 0.022857139, y: 0.06285579, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 55
+    _Position: {x: 0.022857139, y: 0.1914272, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 56
+    _Position: {x: 0.022857139, y: 0.2999986, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 57
+    _Position: {x: 0.022857139, y: 0.39714143, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 58
+    _Position: {x: 0.022857139, y: 0.48571283, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 59
+    _Position: {x: 0.022857139, y: 0.56571275, z: -0.03142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 60
+    _Position: {x: 0.022857139, y: 0.6285699, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: 0, z: 0, w: 1}
+    _BaseScale: 10.099996
+  - _Frame: 61
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.0021193274, z: 0, w: 0.9999977}
+    _BaseScale: 10.099996
+  - _Frame: 62
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.007604578, z: 0, w: 0.99997103}
+    _BaseScale: 10.099996
+  - _Frame: 63
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.014336147, z: 0, w: 0.9998972}
+    _BaseScale: 10.099996
+  - _Frame: 64
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.022687344, z: 0, w: 0.99974257}
+    _BaseScale: 10.099996
+  - _Frame: 65
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.031535383, z: 0, w: 0.9995026}
+    _BaseScale: 10.099996
+  - _Frame: 66
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.040505514, z: 0, w: 0.99917924}
+    _BaseScale: 10.099996
+  - _Frame: 67
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.049472384, z: 0, w: 0.9987755}
+    _BaseScale: 10.099996
+  - _Frame: 68
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.05893307, z: 0, w: 0.99826187}
+    _BaseScale: 10.099996
+  - _Frame: 69
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.06901034, z: 0, w: 0.9976159}
+    _BaseScale: 10.099996
+  - _Frame: 70
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.07908057, z: 0, w: 0.9968682}
+    _BaseScale: 10.099996
+  - _Frame: 71
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.08914273, z: 0, w: 0.9960188}
+    _BaseScale: 10.099996
+  - _Frame: 72
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.09931985, z: 0, w: 0.9950555}
+    _BaseScale: 10.099996
+  - _Frame: 73
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.10973443, z: 0, w: 0.993961}
+    _BaseScale: 10.099996
+  - _Frame: 74
+    _Position: {x: 0.022857139, y: 0.6571412, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.12050825, z: 0, w: 0.99271226}
+    _BaseScale: 10.099996
+  - _Frame: 75
+    _Position: {x: 0.022857139, y: 0.66856974, z: -0.037142858}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.13176225, z: 0, w: 0.99128133}
+    _BaseScale: 10.099996
+  - _Frame: 76
+    _Position: {x: 0.022857139, y: 0.68571264, z: -0.057142857}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.14324607, z: 0, w: 0.9896871}
+    _BaseScale: 10.099996
+  - _Frame: 77
+    _Position: {x: 0.022857139, y: 0.70856977, z: -0.10857143}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.15483378, z: 0, w: 0.9879405}
+    _BaseScale: 10.099996
+  - _Frame: 78
+    _Position: {x: 0.022857139, y: 0.73428404, z: -0.18571429}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.16615437, z: 0, w: 0.9860997}
+    _BaseScale: 10.099996
+  - _Frame: 79
+    _Position: {x: 0.022857139, y: 0.7685697, z: -0.2914286}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.17634882, z: 0, w: 0.98432773}
+    _BaseScale: 10.099996
+  - _Frame: 80
+    _Position: {x: 0.022857139, y: 0.7999982, z: -0.42285717}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.18529943, z: 0, w: 0.9826821}
+    _BaseScale: 10.099996
+  - _Frame: 81
+    _Position: {x: 0.022857139, y: 0.82856953, z: -0.5628572}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.19325626, z: 0, w: 0.98114824}
+    _BaseScale: 10.099996
+  - _Frame: 82
+    _Position: {x: 0.022857139, y: 0.8485695, z: -0.71142864}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.20083405, z: 0, w: 0.9796252}
+    _BaseScale: 10.099996
+  - _Frame: 83
+    _Position: {x: 0.022857139, y: 0.85428375, z: -0.8885715}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.20754625, z: 0, w: 0.9782252}
+    _BaseScale: 10.099996
+  - _Frame: 84
+    _Position: {x: 0.022857139, y: 0.85428375, z: -1.0742859}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.21376158, z: 0, w: 0.9768858}
+    _BaseScale: 10.099996
+  - _Frame: 85
+    _Position: {x: 0.022857139, y: 0.85428375, z: -1.2800002}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.21948181, z: 0, w: 0.9756166}
+    _BaseScale: 10.099996
+  - _Frame: 86
+    _Position: {x: 0.022857139, y: 0.85428375, z: -1.4885716}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.225073, z: 0, w: 0.97434187}
+    _BaseScale: 10.099996
+  - _Frame: 87
+    _Position: {x: 0.022857139, y: 0.85428375, z: -1.6914288}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.23041418, z: 0, w: 0.9730926}
+    _BaseScale: 10.099996
+  - _Frame: 88
+    _Position: {x: 0.022857139, y: 0.85428375, z: -1.8857145}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.2356273, z: 0, w: 0.97184354}
+    _BaseScale: 10.099996
+  - _Frame: 89
+    _Position: {x: 0.022857139, y: 0.85428375, z: -2.0657146}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.24083363, z: 0, w: 0.9705664}
+    _BaseScale: 10.099996
+  - _Frame: 90
+    _Position: {x: 0.022857139, y: 0.85428375, z: -2.214286}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.2463955, z: 0, w: 0.9691693}
+    _BaseScale: 10.099996
+  - _Frame: 91
+    _Position: {x: 0.039999988, y: 1.0743643, z: -2.3428576}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.2525525, z: 0, w: 0.9675832}
+    _BaseScale: 10.099996
+  - _Frame: 92
+    _Position: {x: 0.1085714, y: 0.85428375, z: -2.4314291}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.25906053, z: 0, w: 0.9658611}
+    _BaseScale: 10.099996
+  - _Frame: 93
+    _Position: {x: 0.2485714, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.26603758, z: 0, w: 0.9639627}
+    _BaseScale: 10.099996
+  - _Frame: 94
+    _Position: {x: 0.42285705, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.2730007, z: 0, w: 0.9620138}
+    _BaseScale: 10.099996
+  - _Frame: 95
+    _Position: {x: 0.62857133, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.27982986, z: 0, w: 0.9600496}
+    _BaseScale: 10.099996
+  - _Frame: 96
+    _Position: {x: 0.8314284, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.28652546, z: 0, w: 0.9580726}
+    _BaseScale: 10.099996
+  - _Frame: 97
+    _Position: {x: 1.0285712, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.2930879, z: 0, w: 0.9560855}
+    _BaseScale: 10.099996
+  - _Frame: 98
+    _Position: {x: 1.2199998, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.2995176, z: 0, w: 0.9540907}
+    _BaseScale: 10.099996
+  - _Frame: 99
+    _Position: {x: 1.4142854, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.30593374, z: 0, w: 0.9520528}
+    _BaseScale: 10.099996
+  - _Frame: 100
+    _Position: {x: 1.6028566, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.31209916, z: 0, w: 0.9500496}
+    _BaseScale: 10.099996
+  - _Frame: 101
+    _Position: {x: 1.7942852, y: 0.85428375, z: -2.4714293}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.31777865, z: 0, w: 0.9481649}
+    _BaseScale: 10.099996
+  - _Frame: 102
+    _Position: {x: 1.9142851, y: 0.85428375, z: -2.3800008}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.3249799, z: 0, w: 0.945721}
+    _BaseScale: 10.099996
+  - _Frame: 103
+    _Position: {x: 1.9799993, y: 0.85428375, z: -2.2542868}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.33251512, z: 0, w: 0.9430979}
+    _BaseScale: 10.099996
+  - _Frame: 104
+    _Position: {x: 2.0171418, y: 0.85428375, z: -2.1228583}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.33979467, z: 0, w: 0.9404996}
+    _BaseScale: 10.099996
+  - _Frame: 105
+    _Position: {x: 2.0457132, y: 0.85428375, z: -1.9828583}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.34646928, z: 0, w: 0.9380613}
+    _BaseScale: 10.099996
+  - _Frame: 106
+    _Position: {x: 2.0685704, y: 0.85428375, z: -1.8342869}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.3528931, z: 0, w: 0.9356637}
+    _BaseScale: 10.099996
+  - _Frame: 107
+    _Position: {x: 2.0971417, y: 0.85428375, z: -1.6771442}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.35906765, z: 0, w: 0.9333115}
+    _BaseScale: 10.099996
+  - _Frame: 108
+    _Position: {x: 2.1314273, y: 0.85428375, z: -1.5142871}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.36511043, z: 0, w: 0.9309642}
+    _BaseScale: 10.099996
+  - _Frame: 109
+    _Position: {x: 2.154284, y: 0.85428375, z: -1.3571444}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.37090632, z: 0, w: 0.9286703}
+    _BaseScale: 10.099996
+  - _Frame: 110
+    _Position: {x: 2.1657126, y: 0.85428375, z: -1.188573}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.37634137, z: 0, w: 0.92648107}
+    _BaseScale: 10.099996
+  - _Frame: 111
+    _Position: {x: 2.1657126, y: 0.85428375, z: -1.0171444}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.38153303, z: 0, w: 0.92435527}
+    _BaseScale: 10.099996
+  - _Frame: 112
+    _Position: {x: 2.1657126, y: 0.85428375, z: -0.83428735}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.38579276, z: 0, w: 0.9225855}
+    _BaseScale: 10.099996
+  - _Frame: 113
+    _Position: {x: 2.1657126, y: 0.85428375, z: -0.64571595}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.38958502, z: 0, w: 0.9209906}
+    _BaseScale: 10.099996
+  - _Frame: 114
+    _Position: {x: 2.1657126, y: 0.85428375, z: -0.46000168}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.39337066, z: 0, w: 0.91937995}
+    _BaseScale: 10.099996
+  - _Frame: 115
+    _Position: {x: 2.1657126, y: 0.85428375, z: -0.28857312}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.3976073, z: 0, w: 0.9175557}
+    _BaseScale: 10.099996
+  - _Frame: 116
+    _Position: {x: 2.1657126, y: 0.85428375, z: -0.11143027}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.4025203, z: 0, w: 0.9154111}
+    _BaseScale: 10.099996
+  - _Frame: 117
+    _Position: {x: 2.1399982, y: 0.85428375, z: 0.06571256}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.40787706, z: 0, w: 0.9130368}
+    _BaseScale: 10.099996
+  - _Frame: 118
+    _Position: {x: 2.0742838, y: 0.85428375, z: 0.23999825}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.41321987, z: 0, w: 0.9106313}
+    _BaseScale: 10.099996
+  - _Frame: 119
+    _Position: {x: 2.0028548, y: 0.85428375, z: 0.40856963}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.41832203, z: 0, w: 0.9082988}
+    _BaseScale: 10.099996
+  - _Frame: 120
+    _Position: {x: 1.9114264, y: 0.85428375, z: 0.56285536}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.42341098, z: 0, w: 0.9059377}
+    _BaseScale: 10.099996
+  - _Frame: 121
+    _Position: {x: 1.7571406, y: 0.85428375, z: 0.6799981}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.42950016, z: 0, w: 0.90306675}
+    _BaseScale: 10.099996
+  - _Frame: 122
+    _Position: {x: 1.5714263, y: 0.85428375, z: 0.7628553}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.43657959, z: 0, w: 0.8996657}
+    _BaseScale: 10.099996
+  - _Frame: 123
+    _Position: {x: 1.3828548, y: 0.85428375, z: 0.8371409}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.4440789, z: 0, w: 0.8959877}
+    _BaseScale: 10.099996
+  - _Frame: 124
+    _Position: {x: 1.1742833, y: 0.85428375, z: 0.90285516}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.45265925, z: 0, w: 0.8916836}
+    _BaseScale: 10.099996
+  - _Frame: 125
+    _Position: {x: 0.9599976, y: 0.85428375, z: 0.9657123}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.46208256, z: 0, w: 0.88683695}
+    _BaseScale: 10.099996
+  - _Frame: 126
+    _Position: {x: 0.7342833, y: 0.85428375, z: 0.99714077}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.47244313, z: 0, w: 0.8813611}
+    _BaseScale: 10.099996
+  - _Frame: 127
+    _Position: {x: 0.48856905, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.48328462, z: 0, w: 0.87546325}
+    _BaseScale: 10.099996
+  - _Frame: 128
+    _Position: {x: 0.2457119, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.49491942, z: 0, w: 0.8689389}
+    _BaseScale: 10.099996
+  - _Frame: 129
+    _Position: {x: -0.005716649, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.5073259, z: 0, w: 0.8617543}
+    _BaseScale: 10.099996
+  - _Frame: 130
+    _Position: {x: -0.25143093, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.51973456, z: 0, w: 0.85432786}
+    _BaseScale: 10.099996
+  - _Frame: 131
+    _Position: {x: -0.49143094, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.5320346, z: 0, w: 0.84672266}
+    _BaseScale: 10.099996
+  - _Frame: 132
+    _Position: {x: -0.7342881, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.54453695, z: 0, w: 0.8387369}
+    _BaseScale: 10.099996
+  - _Frame: 133
+    _Position: {x: -0.97714525, y: 0.85428375, z: 0.99999785}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.55712664, z: 0, w: 0.8304275}
+    _BaseScale: 10.099996
+  - _Frame: 134
+    _Position: {x: -1.2171453, y: 0.85428375, z: 0.9914264}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.5697944, z: 0, w: 0.8217873}
+    _BaseScale: 10.099996
+  - _Frame: 135
+    _Position: {x: -1.448574, y: 0.85428375, z: 0.95428354}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.5828349, z: 0, w: 0.81259066}
+    _BaseScale: 10.099996
+  - _Frame: 136
+    _Position: {x: -1.6657169, y: 0.85428375, z: 0.8714264}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.59592724, z: 0, w: 0.8030385}
+    _BaseScale: 10.099996
+  - _Frame: 137
+    _Position: {x: -1.8914312, y: 0.85428375, z: 0.7742835}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.60886294, z: 0, w: 0.7932755}
+    _BaseScale: 10.099996
+  - _Frame: 138
+    _Position: {x: -2.1142886, y: 0.85428375, z: 0.6314264}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.62046635, z: 0, w: 0.78423315}
+    _BaseScale: 10.099996
+  - _Frame: 139
+    _Position: {x: -2.3485744, y: 0.85428375, z: 0.4657121}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6310654, z: 0, w: 0.7757297}
+    _BaseScale: 10.099996
+  - _Frame: 140
+    _Position: {x: -2.617146, y: 0.79076093, z: 0.30571207}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6376188, z: 0, w: 0.7703521}
+    _BaseScale: 10.099996
+  - _Frame: 141
+    _Position: {x: -2.8857176, y: 0.85428375, z: 0.12285496}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6438402, z: 0, w: 0.76516}
+    _BaseScale: 10.099996
+  - _Frame: 142
+    _Position: {x: -3.1628606, y: 0.85428375, z: -0.068573594}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6500194, z: 0, w: 0.7599176}
+    _BaseScale: 10.099996
+  - _Frame: 143
+    _Position: {x: -3.4542892, y: 0.85428375, z: -0.26571646}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.65625, z: 0, w: 0.7545436}
+    _BaseScale: 10.099996
+  - _Frame: 144
+    _Position: {x: -3.7628608, y: 0.85428375, z: -0.46571645}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6624361, z: 0, w: 0.74911845}
+    _BaseScale: 10.099996
+  - _Frame: 145
+    _Position: {x: -3.9024873, y: 0.85428375, z: -0.29242286}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6685774, z: 0, w: 0.74364257}
+    _BaseScale: 10.099996
+  - _Frame: 146
+    _Position: {x: -4.5291944, y: 1.2266668, z: -0.46342665}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.67485744, z: 0, w: 0.7379481}
+    _BaseScale: 10.099996
+  - _Frame: 147
+    _Position: {x: -4.6084485, y: 0.85428375, z: 0.15546227}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6809064, z: 0, w: 0.73237044}
+    _BaseScale: 10.099996
+  - _Frame: 148
+    _Position: {x: -4.9061146, y: 0.85428375, z: 0.16555512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.68600273, z: 0, w: 0.72759897}
+    _BaseScale: 10.099996
+  - _Frame: 149
+    _Position: {x: -5.103752, y: 0.85428375, z: 0.18278778}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6888096, z: 0, w: 0.7249423}
+    _BaseScale: 10.099996
+  - _Frame: 150
+    _Position: {x: -5.2231765, y: 0.85428375, z: 0.069542766}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.69034445, z: 0, w: 0.7234808}
+    _BaseScale: 10.099996
+  - _Frame: 151
+    _Position: {x: -5.3325257, y: 0.85428375, z: 0.08919728}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.69133604, z: 0, w: 0.72253346}
+    _BaseScale: 10.099996
+  - _Frame: 152
+    _Position: {x: -5.4628625, y: 0.85428375, z: -1.5600024}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.69232625, z: 0, w: 0.7215846}
+    _BaseScale: 10.099996
+  - _Frame: 153
+    _Position: {x: -5.4657197, y: 0.85428375, z: -1.4828596}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.69331515, z: 0, w: 0.7206345}
+    _BaseScale: 10.099996
+  - _Frame: 154
+    _Position: {x: -5.4657197, y: 0.85428375, z: -1.3742882}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.69439244, z: 0, w: 0.71959656}
+    _BaseScale: 10.099996
+  - _Frame: 155
+    _Position: {x: -5.4657197, y: 0.85428375, z: -1.2428597}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6956473, z: 0, w: 0.71838343}
+    _BaseScale: 10.099996
+  - _Frame: 156
+    _Position: {x: -5.4657197, y: 0.85428375, z: -1.088574}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6969002, z: 0, w: 0.7171683}
+    _BaseScale: 10.099996
+  - _Frame: 157
+    _Position: {x: -5.4657197, y: 0.85428375, z: -0.92000264}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.6980616, z: 0, w: 0.71603775}
+    _BaseScale: 10.099996
+  - _Frame: 158
+    _Position: {x: -5.4657197, y: 0.85428375, z: -0.7514312}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.69922113, z: 0, w: 0.71490544}
+    _BaseScale: 10.099996
+  - _Frame: 159
+    _Position: {x: -5.468577, y: 0.85428375, z: -0.5771456}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.70046794, z: 0, w: 0.71368396}
+    _BaseScale: 10.099996
+  - _Frame: 160
+    _Position: {x: -5.468577, y: 0.85428375, z: -0.38857418}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7017125, z: 0, w: 0.71246034}
+    _BaseScale: 10.099996
+  - _Frame: 161
+    _Position: {x: -5.4742913, y: 0.85428375, z: -0.18285991}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7029549, z: 0, w: 0.7112345}
+    _BaseScale: 10.099996
+  - _Frame: 162
+    _Position: {x: -5.48572, y: 0.85428375, z: 0.028568646}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7041067, z: 0, w: 0.7100943}
+    _BaseScale: 10.099996
+  - _Frame: 163
+    _Position: {x: -5.5085773, y: 0.85428375, z: 0.24856861}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7052567, z: 0, w: 0.7089522}
+    _BaseScale: 10.099996
+  - _Frame: 164
+    _Position: {x: -5.5314345, y: 0.85428375, z: 0.49142572}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.70631653, z: 0, w: 0.70789623}
+    _BaseScale: 10.099996
+  - _Frame: 165
+    _Position: {x: -5.571435, y: 0.85428375, z: 0.7514257}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.70728666, z: 0, w: 0.70692694}
+    _BaseScale: 10.099996
+  - _Frame: 166
+    _Position: {x: -5.634292, y: 0.85428375, z: 1.019997}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.70825547, z: 0, w: 0.7059564}
+    _BaseScale: 10.099996
+  - _Frame: 167
+    _Position: {x: -5.7228637, y: 0.85428375, z: 1.3171397}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.709135, z: 0, w: 0.7050728}
+    _BaseScale: 10.099996
+  - _Frame: 168
+    _Position: {x: -5.8142924, y: 0.85428375, z: 1.6171397}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.70975006, z: 0, w: 0.7044536}
+    _BaseScale: 10.099996
+  - _Frame: 169
+    _Position: {x: -5.9114356, y: 0.85428375, z: 1.9199967}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7101891, z: 0, w: 0.704011}
+    _BaseScale: 10.099996
+  - _Frame: 170
+    _Position: {x: -6.034293, y: 0.85428375, z: 2.188568}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7109786, z: 0, w: 0.7032137}
+    _BaseScale: 10.099996
+  - _Frame: 171
+    _Position: {x: -6.1514363, y: 0.85428375, z: 2.4571393}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71167964, z: 0, w: 0.70250416}
+    _BaseScale: 10.099996
+  - _Frame: 172
+    _Position: {x: -6.2771506, y: 0.85428375, z: 2.7085679}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.712555, z: 0, w: 0.7016164}
+    _BaseScale: 10.099996
+  - _Frame: 173
+    _Position: {x: -6.422865, y: 0.85428375, z: 2.9142818}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71404034, z: 0, w: 0.7001046}
+    _BaseScale: 10.099996
+  - _Frame: 174
+    _Position: {x: -6.520008, y: 0.85428375, z: 3.0714247}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 175
+    _Position: {x: -6.520008, y: 0.8285695, z: 3.0714247}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 185
+    _Position: {x: -6.5228653, y: 0.8285695, z: 3.06571}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 186
+    _Position: {x: -6.5371513, y: 0.8285695, z: 3.0457098}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 187
+    _Position: {x: -6.5828657, y: 0.8285695, z: 2.9799955}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 188
+    _Position: {x: -6.6542945, y: 0.8285695, z: 2.8571384}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 189
+    _Position: {x: -6.740009, y: 0.8285695, z: 2.6742811}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7158708, z: 0, w: 0.6982328}
+    _BaseScale: 10.099996
+  - _Frame: 190
+    _Position: {x: -6.8285804, y: 0.8285695, z: 2.4714236}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7152612, z: 0, w: 0.69885725}
+    _BaseScale: 10.099996
+  - _Frame: 191
+    _Position: {x: -6.911438, y: 0.8285695, z: 2.279995}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7144767, z: 0, w: 0.6996592}
+    _BaseScale: 10.099996
+  - _Frame: 192
+    _Position: {x: -7.0000095, y: 0.8285695, z: 2.077138}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 193
+    _Position: {x: -7.105724, y: 0.8285695, z: 1.8942807}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 194
+    _Position: {x: -7.1942954, y: 0.8285695, z: 1.7457093}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 195
+    _Position: {x: -7.254296, y: 0.8285695, z: 1.6799948}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 196
+    _Position: {x: -7.288582, y: 0.8285695, z: 1.6485664}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 197
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.6342804}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 210
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.6628518}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71438956, z: 0, w: 0.69974834}
+    _BaseScale: 10.099996
+  - _Frame: 211
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.705709}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7142151, z: 0, w: 0.6999263}
+    _BaseScale: 10.099996
+  - _Frame: 212
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.7514232}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7140406, z: 0, w: 0.70010436}
+    _BaseScale: 10.099996
+  - _Frame: 213
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.788566}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7139534, z: 0, w: 0.7001933}
+    _BaseScale: 10.099996
+  - _Frame: 214
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.8428515}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7137788, z: 0, w: 0.70037127}
+    _BaseScale: 10.099996
+  - _Frame: 215
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.9199944}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71360415, z: 0, w: 0.7005492}
+    _BaseScale: 10.099996
+  - _Frame: 216
+    _Position: {x: -7.302868, y: 0.8285695, z: 1.9971373}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 217
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 235
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 236
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 237
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 238
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 239
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 240
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 241
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 242
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 243
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 244
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 245
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 262
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 263
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 264
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 265
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351683, z: 0, w: 0.700638}
+    _BaseScale: 10.099996
+  - _Frame: 266
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 267
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 268
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 269
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 270
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 271
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 272
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 273
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 274
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 275
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 276
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 277
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 278
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 279
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 280
+    _Position: {x: -7.302868, y: 0.83999795, z: 2.0428512}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71351695, z: 0, w: 0.7006381}
+    _BaseScale: 10.099996
+  - _Frame: 305
+    _Position: {x: -7.302868, y: 0.8571408, z: 2.0685656}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71325487, z: 0, w: 0.70090485}
+    _BaseScale: 10.099996
+  - _Frame: 306
+    _Position: {x: -7.300011, y: 0.942855, z: 2.097137}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71299267, z: 0, w: 0.7011715}
+    _BaseScale: 10.099996
+  - _Frame: 307
+    _Position: {x: -7.300011, y: 1.222855, z: 2.097137}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71299267, z: 0, w: 0.7011715}
+    _BaseScale: 10.099996
+  - _Frame: 308
+    _Position: {x: -7.300011, y: 1.6514263, z: 2.097137}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71299267, z: 0, w: 0.7011715}
+    _BaseScale: 10.099996
+  - _Frame: 309
+    _Position: {x: -7.300011, y: 2.1171405, z: 2.097137}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71299267, z: 0, w: 0.7011715}
+    _BaseScale: 10.099996
+  - _Frame: 310
+    _Position: {x: -7.300011, y: 2.5714262, z: 2.097137}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71299267, z: 0, w: 0.7011715}
+    _BaseScale: 10.099996
+  - _Frame: 311
+    _Position: {x: -7.300011, y: 2.9228547, z: 2.097137}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71299267, z: 0, w: 0.7011715}
+    _BaseScale: 10.099996
+  - _Frame: 312
+    _Position: {x: -7.300011, y: 3.1228542, z: 2.0885653}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 313
+    _Position: {x: -7.300011, y: 3.2457113, z: 2.0685651}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 314
+    _Position: {x: -7.300011, y: 3.259997, z: 2.0685651}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 324
+    _Position: {x: -7.3028684, y: 3.259997, z: 2.0685651}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 327
+    _Position: {x: -7.3028684, y: 3.245711, z: 2.0685651}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 328
+    _Position: {x: -7.3028684, y: 3.1914253, z: 2.0685651}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 329
+    _Position: {x: -7.3028684, y: 3.1114254, z: 2.071422}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 330
+    _Position: {x: -7.3028684, y: 3.008568, z: 2.071422}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 331
+    _Position: {x: -7.3028684, y: 2.8542821, z: 2.071422}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 332
+    _Position: {x: -7.3028684, y: 2.7028532, z: 2.071422}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 333
+    _Position: {x: -7.3028684, y: 2.554282, z: 2.071422}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 334
+    _Position: {x: -7.3028684, y: 2.4285676, z: 2.0599933}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 335
+    _Position: {x: -7.3028684, y: 2.3285673, z: 2.0457077}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 336
+    _Position: {x: -7.3028684, y: 2.2828531, z: 2.031422}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 337
+    _Position: {x: -7.3028684, y: 2.2399957, z: 2.0171359}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 338
+    _Position: {x: -7.3028684, y: 2.1914241, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 339
+    _Position: {x: -7.3028684, y: 2.1428528, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 340
+    _Position: {x: -7.3028684, y: 2.0542812, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 341
+    _Position: {x: -7.3028684, y: 1.9342811, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 342
+    _Position: {x: -7.3028684, y: 1.8142811, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 343
+    _Position: {x: -7.3028684, y: 1.6971383, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 344
+    _Position: {x: -7.3028684, y: 1.5714239, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 345
+    _Position: {x: -7.3028684, y: 1.4428524, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 346
+    _Position: {x: -7.3028684, y: 1.3057096, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 347
+    _Position: {x: -7.3028684, y: 1.1628523, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 348
+    _Position: {x: -7.3000116, y: 1.0057094, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71290535, z: 0, w: 0.7012604}
+    _BaseScale: 10.099996
+  - _Frame: 349
+    _Position: {x: -7.2800117, y: 0.8228524, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7128179, z: 0, w: 0.7013492}
+    _BaseScale: 10.099996
+  - _Frame: 350
+    _Position: {x: -7.2514405, y: 0.59999514, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7125556, z: 0, w: 0.7016157}
+    _BaseScale: 10.099996
+  - _Frame: 351
+    _Position: {x: -7.228584, y: 0.37713802, z: 2.0142787}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71229327, z: 0, w: 0.7018821}
+    _BaseScale: 10.099996
+  - _Frame: 352
+    _Position: {x: -7.2142982, y: 0.17999518, z: 2.0199928}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71220577, z: 0, w: 0.7019708}
+    _BaseScale: 10.099996
+  - _Frame: 353
+    _Position: {x: -7.2000127, y: 0.019995203, z: 2.0314212}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71220577, z: 0, w: 0.7019708}
+    _BaseScale: 10.099996
+  - _Frame: 354
+    _Position: {x: -7.185727, y: -0.12571909, z: 2.0514212}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71220577, z: 0, w: 0.7019708}
+    _BaseScale: 10.099996
+  - _Frame: 355
+    _Position: {x: -7.174299, y: -0.23429051, z: 2.0885642}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71211827, z: 0, w: 0.70205957}
+    _BaseScale: 10.099996
+  - _Frame: 356
+    _Position: {x: -7.174299, y: -0.31714767, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71211827, z: 0, w: 0.70205957}
+    _BaseScale: 10.099996
+  - _Frame: 357
+    _Position: {x: -7.174299, y: -0.3742905, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.71211815, z: 0, w: 0.70205945}
+    _BaseScale: 10.099996
+  - _Frame: 358
+    _Position: {x: -7.174299, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 371
+    _Position: {x: -7.180013, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 372
+    _Position: {x: -7.1971564, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 373
+    _Position: {x: -7.2314425, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 374
+    _Position: {x: -7.2685857, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 375
+    _Position: {x: -7.3371572, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 376
+    _Position: {x: -7.428586, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 377
+    _Position: {x: -7.5314436, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 378
+    _Position: {x: -7.6428723, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 379
+    _Position: {x: -7.7685866, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 380
+    _Position: {x: -7.914301, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 381
+    _Position: {x: -8.06573, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 382
+    _Position: {x: -8.222874, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 383
+    _Position: {x: -8.368588, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 384
+    _Position: {x: -8.500017, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 385
+    _Position: {x: -8.5857315, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 386
+    _Position: {x: -8.617161, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+  - _Frame: 387
+    _Position: {x: -8.622875, y: -0.41143337, z: 2.1085641}
+    _ViewFinderDimensions: {x: 1, y: 0.39999998, z: 1}
+    _Rotation: {x: 0, y: -0.7121183, z: 0, w: 0.7020596}
+    _BaseScale: 10.099996
+--- !u!1 &1399694598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1399694600}
+  - component: {fileID: 1399694599}
+  m_Layer: 0
+  m_Name: Curve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1399694599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399694598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b6b4e22427e4efbb847bd026324e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 1, y: 0.5, z: 0}
+  - {x: 2, y: 1, z: 0.6599035}
+  - {x: 2.005506, y: -0.1534872, z: -0.45860815}
+  - {x: 3.2319007, y: 0.29064417, z: 0}
+--- !u!4 &1399694600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399694598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1429019403
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429019405}
+  - component: {fileID: 1429019404}
+  m_Layer: 0
+  m_Name: Voxon.InputController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1429019404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429019403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdce307c928d7144a803bdd7b0a1226a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: default.json
+  keyboard:
+    buckets: ffffffffffffffffffffffff010000000500000002000000ffffffffffffffffffffffff03000000ffffffffffffffff08000000ffffffffffffffff0700000006000000
+    hashCodes: 92ab9755d18ba0277377124cf86f8906f919075ceab07d513234eb46f963bb071692154e0000000000000000000000000000000000000000000000000000000000000000
+    next: ffffffffffffffffffffffff00000000ffffffffffffffff04000000ffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000
+    count: 9
+    version: 9
+    freeList: -1
+    freeCount: 0
+    keys:
+    - ColorSwap
+    - Quit
+    - Left
+    - Right
+    - Up
+    - Down
+    - RotLeft
+    - RotRight
+    - Hide
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    values: 39000000010000001e00000020000000110000001f0000001000000012000000290000000000000000000000000000000000000000000000000000000000000000000000
+  mouse:
+    buckets: ffffffff01000000ffffffff
+    hashCodes: 7377124cf86f890600000000
+    next: ffffffff0000000000000000
+    count: 2
+    version: 2
+    freeList: -1
+    freeCount: 0
+    keys:
+    - Left
+    - Right
+    - 
+    values: 010000000200000000000000
+  spacenav:
+    buckets: ffffffff0100000000000000
+    hashCodes: fdc29461fcb4172f00000000
+    next: ffffffffffffffff00000000
+    count: 2
+    version: 2
+    freeList: -1
+    freeCount: 0
+    keys:
+    - LeftButton
+    - RightButton
+    - 
+    values: 010000000200000000000000
+  j1Buttons:
+    buckets: 00000000ffffffffffffffff
+    hashCodes: c25d3e320000000000000000
+    next: ffffffff0000000000000000
+    count: 1
+    version: 1
+    freeList: -1
+    freeCount: 0
+    keys:
+    - Jump
+    - 
+    - 
+    values: 080000000000000000000000
+  j1Axis:
+    buckets: ffffffffffffffffffffffff
+    hashCodes: 000000000000000000000000
+    next: 000000000000000000000000
+    count: 0
+    version: 0
+    freeList: -1
+    freeCount: 0
+    keys:
+    - 
+    - 
+    - 
+    values: 000000000000000000000000
+  j2Buttons:
+    buckets: 00000000ffffffffffffffff
+    hashCodes: c25d3e320000000000000000
+    next: ffffffff0000000000000000
+    count: 1
+    version: 1
+    freeList: -1
+    freeCount: 0
+    keys:
+    - Jump
+    - 
+    - 
+    values: 080000000000000000000000
+  j2Axis:
+    buckets: ffffffffffffffffffffffff
+    hashCodes: 000000000000000000000000
+    next: 000000000000000000000000
+    count: 0
+    version: 0
+    freeList: -1
+    freeCount: 0
+    keys:
+    - 
+    - 
+    - 
+    values: 000000000000000000000000
+  j3Buttons:
+    buckets: 00000000ffffffffffffffff
+    hashCodes: c25d3e320000000000000000
+    next: ffffffff0000000000000000
+    count: 1
+    version: 1
+    freeList: -1
+    freeCount: 0
+    keys:
+    - Jump
+    - 
+    - 
+    values: 080000000000000000000000
+  j3Axis:
+    buckets: ffffffffffffffffffffffff
+    hashCodes: 000000000000000000000000
+    next: 000000000000000000000000
+    count: 0
+    version: 0
+    freeList: -1
+    freeCount: 0
+    keys:
+    - 
+    - 
+    - 
+    values: 000000000000000000000000
+  j4Buttons:
+    buckets: 00000000ffffffffffffffff
+    hashCodes: c25d3e320000000000000000
+    next: ffffffff0000000000000000
+    count: 1
+    version: 1
+    freeList: -1
+    freeCount: 0
+    keys:
+    - Jump
+    - 
+    - 
+    values: 080000000000000000000000
+  j4Axis:
+    buckets: ffffffffffffffffffffffff
+    hashCodes: 000000000000000000000000
+    next: 000000000000000000000000
+    count: 0
+    version: 0
+    freeList: -1
+    freeCount: 0
+    keys:
+    - 
+    - 
+    - 
+    values: 000000000000000000000000
+--- !u!4 &1429019405
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429019403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1624062557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624062559}
+  - component: {fileID: 1624062558}
+  m_Layer: 0
+  m_Name: Decorator No Loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1624062558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624062557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2cdd158732c4661ba3c2b49fe9ebc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 516411527}
+  frequency: 10
+  lookForward: 1
+  items:
+  - {fileID: 400000, guid: 428260ca0c7884ffa9afcb1da133720c, type: 3}
+  - {fileID: 400000, guid: 07bc9122086c6428c8abcca8696763ac, type: 3}
+  - {fileID: 400000, guid: 0e17c3c93ca544fbd99b2cc9fbd5e541, type: 3}
+--- !u!4 &1624062559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624062557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1641084888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1641084889}
+  - component: {fileID: 1641084892}
+  - component: {fileID: 1641084891}
+  - component: {fileID: 1641084890}
+  m_Layer: 0
+  m_Name: Right Eye
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1641084889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641084888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.25, y: 0.25, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 1020182020}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1641084890
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641084888}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1641084891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641084888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1641084892
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641084888}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1662817381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 428155847203071889, guid: c14535a3218783d4e9f971d13902cabe,
+    type: 3}
+  m_PrefabInstance: {fileID: 547888656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547888657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc0beaddc7d29f4c89bff2a3470990b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1751121640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1751121645}
+  - component: {fileID: 1751121644}
+  - component: {fileID: 1751121643}
+  - component: {fileID: 1751121642}
+  - component: {fileID: 1751121641}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1751121641
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751121640}
+  m_Enabled: 1
+--- !u!124 &1751121642
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751121640}
+  m_Enabled: 1
+--- !u!92 &1751121643
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751121640}
+  m_Enabled: 1
+--- !u!20 &1751121644
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751121640}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1751121645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751121640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1763901541
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1763901543}
+  - component: {fileID: 1763901542}
+  m_Layer: 0
+  m_Name: Voxon.VXProcess
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1763901542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763901541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e420ecae1ec191940807ec3ce8267b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guidelines: 0
+  show_vps: 1
+  show_version: 1
+  active: 1
+  apply_vx_on_load: 1
+  editorCamera: {fileID: 1662817381}
+  fixedFrameRate: 0
+  TargetFrameRate: 15
+  recordingPath: C:\Voxon\Media\MyCaptures\framedata
+  recordOnLoad: 0
+  recordingStyle: 1
+  _logger_max_lines: 10
+--- !u!4 &1763901543
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763901541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036565756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036565758}
+  - component: {fileID: 2036565757}
+  m_Layer: 0
+  m_Name: Decorator Loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2036565757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036565756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2cdd158732c4661ba3c2b49fe9ebc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 321500124}
+  frequency: 10
+  lookForward: 1
+  items:
+  - {fileID: 400000, guid: 428260ca0c7884ffa9afcb1da133720c, type: 3}
+  - {fileID: 400000, guid: 07bc9122086c6428c8abcca8696763ac, type: 3}
+  - {fileID: 400000, guid: 0e17c3c93ca544fbd99b2cc9fbd5e541, type: 3}
+--- !u!4 &2036565758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036565756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -1,0 +1,157 @@
+﻿Shader "Voxon/LightShader"{
+	//show values to edit in inspector
+	Properties
+	{
+		_Color("Color", Color) = (1,1,1,1)
+		_MainTex("Texture", 2D) = "white" {}
+
+	}
+		SubShader
+	{
+		Pass
+		{
+			CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+			#pragma target 5.0
+
+			#include "UnityCG.cginc"
+
+			struct POLTEX {
+				float3 vertex;
+				float2 uv;
+				uint col;
+			};
+
+			struct DEPTH
+			{
+				float value;         // Depth value at this point
+				int index;      // Data index where depth related value is stored
+			};
+
+			uniform RWStructuredBuffer<POLTEX> _Data : register(u1);
+			uniform RWStructuredBuffer<DEPTH> _Depth : register(u2);
+			RWStructuredBuffer<uint> _Index : register(u3);
+
+			float4x4 _ActiveCamera : register(u4);
+			uint _Resolution : register(u5);
+			
+
+			// note: no SV_POSITION in this struct
+			struct v2f {
+				float4 vertex : COLOR; // vertex position input
+				float2 uv : TEXCOORD0;
+			};
+
+			v2f vert(
+				float4 vertex : POSITION, // vertex position input
+				float2 uv : TEXCOORD0, // texture coordinate input
+				out float4 outpos : SV_POSITION // clip space position output
+				)
+			{
+				v2f o;
+				o.uv = uv;
+				outpos = UnityObjectToClipPos(vertex);
+				o.vertex = mul(_ActiveCamera, mul(unity_ObjectToWorld, vertex));
+				return o;
+			}
+
+			float4 _Color;
+			sampler2D _MainTex;
+
+			fixed4 frag(v2f i, UNITY_VPOS_TYPE screenPos : VPOS) : SV_Target
+			{
+				// Default action
+				fixed4 c = tex2D(_MainTex, i.uv) * _Color;
+				// screenPos.xy will contain pixel integer coordinates.
+				// use them to implement a checkerboard pattern that skips rendering
+				// 4x4 blocks of pixels
+
+				// checker value will be negative for 4x4 blocks of pixels
+				// in a checkerboard pattern
+
+				// Should Only Include Voxels within Cube! Should Limit Display based on that
+
+				if(unity_OrthoParams.w > 0){
+					int ScreenX = floor(screenPos.x); // X pixel
+					int ScreenY = floor(screenPos.y); // Y Pixel
+					float depth = abs(screenPos.z / screenPos.w); // Z-Depth
+
+					int depth_index = floor(ScreenX + ScreenY * _ScreenParams.x);
+					int data_index = 0;
+
+					// Discard Check of new Depth and inside volume (depth requires direction check)
+					
+					if (_Depth[depth_index].value > depth || abs(i.vertex.x) > 1 || abs(i.vertex.y) > 1 || abs(i.vertex.z) > 1) {
+						return c;
+					}
+					
+
+					/* Update Depth Map*/
+
+					// Get data index
+					if (_Depth[depth_index].value < -1) { // New Pixel
+						// Need threadsafe index update
+						InterlockedAdd(_Index[0], 1, data_index);
+						_Depth[depth_index].index = data_index;
+					}
+					else { // Old Pixel
+						// Maintain old index (we overwrite it)
+						data_index = _Depth[depth_index].index;
+					}
+
+					_Depth[depth_index].value = depth;
+
+					_Data[data_index].vertex = i.vertex.xzy;
+					_Data[data_index].vertex.z *= -1;
+					_Data[data_index].vertex.x *= -1;
+
+					float4 arrangedColor = tex2D(_MainTex, i.uv).rgba * _Color;
+					int red = int(arrangedColor.r * 255) & 255;
+					int green = int(arrangedColor.g * 255) & 255;
+					int blue = int(arrangedColor.b * 255) & 255;
+					uint col = (red << 16) | (green << 8) | blue;
+
+					_Data[data_index].col = col;
+
+
+					/*
+					int index =  x + y * floor(_Resolution);
+
+					float depth = 
+						
+					if (_Data[index].col == 0 || depth > _Data[index].uv[0]) {
+						_Data[index].uv[0] = depth;
+							
+						// Default Positions
+						float xRat = (screenPos.x / _ScreenParams.x) * 2 - 1; // Range [-1, 1]
+						float zRat = ((screenPos.y / _ScreenParams.y) * 2 - 1); // Range [-1, 1]
+							
+
+						// Rotate with Respect to Camera
+						float4 viewRot = float4(xRat, yRat, zRat, 0);
+						float4 newRot = mul(UNITY_MATRIX_V, viewRot);
+
+						// While the depth map needs to rotate with the camera
+						// the position of the pixels we are refering to needs to be maintains
+						// So rotation / offset needs to impact differing pixels
+						
+						//_Data[index].vertex = newRot;
+						float4 arrangedColor = tex2D(_MainTex, i.uv).rgba * _Color;
+						int red = int(arrangedColor.r * 255) & 255;
+						int green = int(arrangedColor.g * 255) & 255;
+						int blue = int(arrangedColor.b * 255) & 255;
+						uint col = (red << 16) | (green << 8) | blue;
+							
+						//_Data[index].col = col;
+						InterlockedAdd(_Index[0], 1, _Data[index].col);
+					}
+					*/
+				}
+				// fixed4 c = fixed4(newRot.x, newRot.y, newRot.z, 0);
+				return c;
+			}
+			ENDCG
+		}
+	}
+}
